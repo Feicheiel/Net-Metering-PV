@@ -62,9 +62,9 @@ rough_monthly_kWh['k'] = (y - b) / a
 ```
 
 Where:  
-- \(a = 	ext{Hot times kWh}\)  
-- \(b = 	ext{Off-peak kWh}\)  
-- \(y = 	ext{Actual kWh}\)  
+- \(a = \text{Hot times kWh}\)  
+- \(b = \text{Off-peak kWh}\)  
+- \(y = \text{Actual kWh}\)  
 
 Then, apply the scaling factor \(k\) to hourly peak loads:
 
