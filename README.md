@@ -80,10 +80,9 @@ Using PVLib:
 
 \[
 \begin{align*}
-I_b &= DNI \cdot \cos(	heta_z) \
+I_b &= DNI \cdot \cos(\theta_z) \
 I_d &= DHI \cdot \frac{1 + \cos(\beta)}{2} \
-I_r &= GHI \cdot 
-ho \cdot \frac{1 - \cos(\beta)}{2} \
+I_r &= GHI \cdot \rho \cdot \frac{1 - \cos(\beta)}{2} \
 I_{\text{total}} &= I_b + I_d + I_r
 \end{align*}
 \]
@@ -116,7 +115,7 @@ Where:
 ### 6. Hourly Deficit
 
 \[
-\text{Deficit}_t = P_{text{PV,usable},t} - \text{Load}_t
+\text{Deficit}_t = P_{\text{PV,usable},t} - \text{Load}_t
 \]
 
 ---
@@ -170,8 +169,8 @@ numpy-financial
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/repo.git
-cd repo
+git clone https://github.com/Feicheiel/Net-Metering-PV.git
+cd Net-Metering-PV
 ```
 
 2. Install dependencies:
@@ -209,5 +208,7 @@ Example plot:
 ![Cashflow Example](imgs/img_monthly_production_vs_consumption[bar].png)
 
 ---
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/Feicheiel/Net-Metering-PV.git/HEAD?urlpath=%2Fdoc%2Ftree%2Fanalysis.ipynb)
+
 
 This README provides a **comprehensive overview** of the methodology, mathematical formulas, and the workflow to reproduce the results.
